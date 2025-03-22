@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helmet Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-main">
+                <div class="header-left">
+                    <h1>Helmet Store</h1>
+                </div>
+                <div class="header-right">
+                    <nav>
+                        <ul id="nav-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="/Products.html">Products</a></li>
+                            <li><a href="/aboutus.html">About Us</a></li>
+                            <li><a href="/contactus.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Add search button and profile icon -->
+                    <div class="navbar-extra">
+                        <div class="search-container">
+                            <button id="search-button"><i class="fas fa-search"></i></button>
+                            <div class="search-bar">
+                                <input type="text" placeholder="Search...">
+                            </div>
+                        </div>
+                        <div class="profile-icon">
+                            <a href="#profile"><i class="fas fa-user"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="main-dis">
+                <h2>Protect Your Head in Style</h2>
+                <p>Explore our wide range of helmets designed for safety and comfort.</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+
+            <!-- Add 3 sliding images -->
+            <div class="sliding-images">
+                <div class="slider">
+                    <img src="why-choose-us.webp" alt="Helmet 1" class="active">
+                    <img src="why-choose-us.webp" alt="Helmet 2">
+                    <img src="why-choose-us.webp" alt="Helmet 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="why-choose-us.webp" alt="Helmet 1">
+                    <h3>Helmet Model X</h3>
+                    <p>$99.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="why-choose-us.webp" alt="Helmet 2">
+                    <h3>Helmet Model Y</h3>
+                    <p>$129.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="why-choose-us.webp" alt="Helmet 3">
+                    <h3>Helmet Model Z</h3>
+                    <p>$149.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2023 Helmet Store. All rights reserved.</p>
+            <p>Contact us: info@helmetstore.com | (123) 456-7890</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Search Bar Toggle and Image Slider -->
+    <script src="script.js"></script>
+</body>
+
+</html>

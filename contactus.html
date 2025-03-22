@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Helmet Store</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-main">
+            <div class="header-left">
+                <h1>Helmet Store</h1>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header><br><br>
+    <section>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="preferred-contact">Preferred Contact Method:</label>
+            <select id="preferred-contact" name="preferred-contact">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>

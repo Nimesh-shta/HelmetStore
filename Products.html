@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Helmet Store</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-main">
+            <div class="header-left">
+                <h1>Helmet Store</h1>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="/Products.html">Products</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="helmet-categories">
+        <h2>Pick the Right Helmet for Your Ride.</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="full-helmet.jpg" alt="Full Helmets">
+                <h3>Full Helmets</h3>
+                <a href="#">View All</a>
+            </div>
+            <div class="category">
+                <img src="half-helmet.jpg" alt="Half Helmets">
+                <h3>Half Helmets</h3>
+                <a href="#">View All</a>
+            </div>
+            <div class="category">
+                <img src="dirt-helmet.jpg" alt="Dirt Helmets">
+                <h3>Dirt Helmets</h3>
+                <a href="#">View All</a>
+            </div>
+            <div class="category">
+                <img src="modular-helmet.jpg" alt="Modular Helmet">
+                <h3>Modular Helmet</h3>
+                <a href="#">View All</a>
+            </div>
+            <div class="category">
+                <img src="dual-sport-helmet.jpg" alt="Dual Sport Helmet">
+                <h3>Dual Sport Helmet</h3>
+                <a href="#">View All</a>
+            </div>
+            <div class="category">
+                <img src="kids-helmet.jpg" alt="Kids Helmet">
+                <h3>Kids Helmet</h3>
+                <a href="#">View All</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="search-sort">
+        <input type="text" id="search-bar" placeholder="Search products...">
+        <select id="sort-options">
+            <option value="default">Sort By Price</option>
+            <option value="price-low-high">Price: Low to High</option>
+            <option value="price-high-low">Price: High to Low</option>
+        </select>
+        <select id="sort-options">
+            <option value="default">Sort By Alphabet </option>
+            <option value="name">Name: A to Z</option>
+            <option value="name">Name: Z to A</option>
+        </select>
+    </div>
+
+    <section class="product-list">
+        <div class="product" data-name="Helmet Model X" data-price="99.99">
+            <img src="helmet1.jpg" alt="Helmet 1">
+            <h3>Helmet Model X</h3>
+            <p>$99.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product" data-name="Helmet Model Y" data-price="129.99">
+            <img src="helmet2.jpg" alt="Helmet 2">
+            <h3>Helmet Model Y</h3>
+            <p>$129.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+</body>
+
+</html>

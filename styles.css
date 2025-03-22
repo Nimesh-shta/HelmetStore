@@ -1,0 +1,337 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fff;
+  color: #000;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Header Styles */
+header {
+  background: #fff;
+  color: #000;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+  height: 60px; /* Slightly increased height for search bar */
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  transition: opacity 0.3s ease; /* Smooth transition for nav links */
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 0.9em;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+/* Navbar Animation */
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: #000;
+  bottom: 0;
+  left: 50%;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Search Bar and Profile Icon */
+.navbar-extra {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 50px;
+}
+
+.search-bar {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  position: absolute;
+  right: 40px; /* Adjust based on button size */
+}
+
+.search-bar.active {
+  width: 200px; /* Adjust width as needed */
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9em;
+  outline: none;
+  width: 100%;
+}
+
+#search-button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 2; /* Ensure button is above search bar */
+}
+
+#search-button:hover {
+  background: #333;
+}
+
+.profile-icon a {
+  color: #000;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.profile-icon a:hover {
+  color: #333;
+}
+
+/* Hero Section Styles */
+.hero {
+  background: #f9f9f9;
+  color: #000;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero .btn {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+.main-dis {
+  margin-top: 150px;
+  color: #ffffff;
+}
+
+/* Sliding Images Animation */
+.sliding-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sliding-images::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  z-index: 1; /* Ensure overlay is above the images */
+}
+
+.slider {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+/* Products Section Styles */
+.products {
+  padding: 50px 0;
+  text-align: center;
+  background: #fff;
+}
+
+.products h2 {
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin: 15px 0 10px;
+  font-size: 1.2em;
+}
+
+.product p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.product button {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background: #333;
+}
+
+/* Footer Styles */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 80px 0;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero h2 {
+    font-size: 1.8em;
+  }
+
+  .hero p {
+    font-size: 0.9em;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .product button {
+    padding: 8px 16px;
+  }
+}
